@@ -1,6 +1,5 @@
 'use strict';
 
-//vinicio - This is capital L because it's a class
 const LinkedList = require('../model/linked-list');
 
 describe('linked-list.js',() => {
@@ -44,8 +43,6 @@ describe('linked-list.js',() => {
 
     first.append(second);
     first.append(third);
-    // vinicio - I can do this because I return this at the end of append
-    //first.append(second).append(third);
 
     expect(first.value).toEqual(10);
     expect(first.next.value).toEqual(20);
